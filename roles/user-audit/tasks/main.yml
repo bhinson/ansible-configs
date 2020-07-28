@@ -1,0 +1,10 @@
+---
+# Ensure user accounts are removed from
+# all systems
+
+- name: Remove users
+  user:
+    name: "{{ item }}"
+    state: absent
+    remove: yes
+  loop: "{{ users_to_remove }}"

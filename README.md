@@ -24,3 +24,7 @@ update-hostname.yml:
 Update host name for a system.  This role deploys a simple /etc/hosts file, and
 manually sets the host name to the FQDN.
 
+user-audit.yml:
+--------------
+Ensure users are no longer present on any systems.  This role removes local user
+accounts, as specified in the variable "users-to-remove".

@@ -1,0 +1,7 @@
+---
+
+- name: User account audit
+  hosts: all
+  roles:
+    - role: user-audit
+
