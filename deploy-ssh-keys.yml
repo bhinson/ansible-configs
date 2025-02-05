@@ -1,0 +1,6 @@
+---
+- name: Deploy public SSH key(s) for root access
+  hosts: all
+
+  roles:
+    - role: deploy-ssh-keys
